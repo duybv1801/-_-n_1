@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <script src="main.js"></script>
+    <!-- Block Element Modifier -->
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar">
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item header_navbar-item-has-qr header_navbar-item-separate">
+                            Vào cửa hàng trên ứng dụng PD-Shop
+
+
+                            <!-- Header QR code-->
+                            <div class="header_qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header_qr-img">
+                                <div class="header_qr-apps">
+                                    <a href="" class="header_qr-link">
+                                        <img src="./assets/img/appstore.png" alt="App Store" class="header_qr-dowload-img">
+                                    </a>
+                                    <a href="" class="header_qr-link">
+                                        <img src="./assets/img/googleplay.png" alt="Google Play" class="header_qr-dowload-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header_navbar-item">
+                            <span class="header_navbar-title-no-pointer">Kết nối</span>
+                            <a href="" class="header_navbar-icon-link">
+                                <i class="header_navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item header_navbar-has-notify">
+                            <a href="" class="header_navbar-item-link">
+                                <i class="header_navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header_notify">
+                                <header class="header_notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header_notify-list">
+                                    <li class="header_notify-item header_notify-item-viewed">
+                                        <a href="" class="header_notify-link">
+                                            <span>
+                                                <img src="./assets/img/ảnh mô tả 4.jpg" alt="" class="header_notify-img">
+                                            </span>
+                                            <div class="header_notify-info">
+                                                <span class="header_notify-name"> Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
+                                                <span class="header_notify-disciption">HiddenTag là giải pháp xác thực chính hãng bằng công nghệ tiên tiến nhất hiện nay</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a href="" class="header_notify-link">
+                                            <span>
+                                                <img src="./assets/img/ảnh mô tả2.jpg" alt="" class="header_notify-img">
+                                            </span>
+                                            <div class="header_notify-info">
+                                                <span class="header_notify-name">Sale sốc bộ dưỡng OhuiTheFirst tái tạo trẻ hóa làn da SALE OFF 70%</span>
+                                                <span class="header_notify-disciption">Giá chỉ còn 375.000 (giá gốc 1.250.000 vnd)</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a href="" class="header_notify-link">
+                                            <span>
+                                                <img src="./assets/img/ảnh mô tả 3.jpg" alt="" class="header_notify-img">
+                                            </span>
+                                            <div class="header_notify-info">
+                                                <span class="header_notify-name">Ohui chính thức ra mắt dòng son lì mới THE FIRST GENTURE LIPSTICK</span>
+                                                <span class="header_notify-disciption">Một làn môi căng mềm, quyến rũ với sắc màu nổi bật luôn là điều mà các quý cô ao ước</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header_notify-footer">
+                                    <a href="" class="header_notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header_navbar-item">
+                            <a href="" class="header_navbar-item-link">
+                                <i class="header_navbar-icon fa-solid fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header_navbar-item header_navbar-item-strong header_navbar-item-separate">Đăng kí</li>
+                        <li class="header_navbar-item header_navbar-item-strong">Đăng nhập</li>  -->
+                        <li class="header_navbar-item header_navbar-user">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLQB7ue_HGEZToffKu3E1Jl4AIzgaJzOq1Xuc6AaICtwerswTfDiWovWd50VBBdF=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="header_navbar-user-img">
+                            <span class="header_navbar-user-name">Duy Bui</span>
+
+                            <ul class="header_navbar-user-menu">
+                                <li class="header_navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header_navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header_navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header_navbar-user-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header-with-search -->
+                <div class="header-with-search">
+                    <div class="header_logo">
+                        <img src="./assets/img/logo2.png" alt="" class="header_logo-img">
+                    </div>
+
+                    <div class="header_search">
+                        <div class="header_search-input-wrap">
+                            <input type="text" class="header_search-input" placeholder="Tìm kiếm">
+
+                            <!-- Search history -->
+                            <div class="header_search-history">
+                                <h3 class="header_search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header_search-history-list">
+                                    <li class="header_search-history-item">
+                                        <a href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header_search-history-item">
+                                        <a href="">Kem trị mụn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header_search-select">
+                            <span class="header_search-select-label">Trong Shop</span>
+                            <i class="header_search-select-icon fa-solid fa-chevron-down"></i>
+
+                            <ul class="header_search-option">
+                                <li class="header_search-option-item header_search-option-item-active">
+                                    <span>Trong Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header_search-option-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header_search-btn">
+                            <i class="header_search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <div class="header_cart">
+                        <div class="header_cart-wrap">
+                            <i class="header_cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header_cart-notice">3</span>
+                            
+                            <!-- No cart: header_cart-list-no-cart -->
+                            <div class="header_cart-list ">
+                                <img src="./assets/img/no-cart.png" alt="" class="header_cart-no-cart-img">
+                                <span class="header_cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h3 class="header_cart-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header_cart-list-item">
+                                    <!-- Cart item -->
+                                    <li class="header_cart-item">
+                                        <img src="https://cf.shopee.vn/file/b60fba42626d0f06378978973ca80942" alt="" class="header_cart-img">
+                                        <div class="header_cart-item-info">
+                                            <div class="header_cart-item-head">
+                                                <h5 class="header_cart-item-name">Dép trong nhà</h5>
+                                                <div class="header_cart-item-price-wrap">
+                                                    <span class="header_cart-item-price">3.000đ</span>
+                                                    <span class="header_cart-item-multiply">x</span>
+                                                    <span class="header_cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header_cart-item-body">
+                                                <span class="header_cart-item-description">
+                                                    Phân loại: bạc
+                                                </span>
+                                                <span class="header_cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header_cart-item">
+                                        <img src="https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45" alt="" class="header_cart-img">
+                                        <div class="header_cart-item-info">
+                                            <div class="header_cart-item-head">
+                                                <h5 class="header_cart-item-name">Váy xòe</h5>
+                                                <div class="header_cart-item-price-wrap">
+                                                    <span class="header_cart-item-price">300.000đ</span>
+                                                    <span class="header_cart-item-multiply">x</span>
+                                                    <span class="header_cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header_cart-item-body">
+                                                <span class="header_cart-item-description">
+                                                    Phân loại: bạc
+                                                </span>
+                                                <span class="header_cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header_cart-item">
+                                        <img src="https://cf.shopee.vn/file/36681386aa67c57d7e97ab0d2adcae36" alt="" class="header_cart-img">
+                                        <div class="header_cart-item-info">
+                                            <div class="header_cart-item-head">
+                                                <h5 class="header_cart-item-name">Áo croptop</h5>
+                                                <div class="header_cart-item-price-wrap">
+                                                    <span class="header_cart-item-price">500.000đ</span>
+                                                    <span class="header_cart-item-multiply">x</span>
+                                                    <span class="header_cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header_cart-item-body">
+                                                <span class="header_cart-item-description">
+                                                    Phân loại: bạc
+                                                </span>
+                                                <span class="header_cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary header_cart-view-cart">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app_container">
+            <div class="grid">
+                <div class="grid_row app_content">
+                    <div class="grid_column-2">
+                        <nav class="category">
+                            <h3 class="category_heading">
+                                <i class="category_heading-icon fa-solid fa-list"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item-active">
+                                    <a href="#" class="category-item_link">Áo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item_link">Quần</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item_link">Váy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="grid_column-10">
+                        <div class="home-filter">
+                            <span class="home-filter_label">Sắp xếp theo</span>
+                            <button class="home-filter_btn btn">Phổ biến</button>
+                            <button class="home-filter_btn btn btn-primary">Mới nhất</button>
+                            <button class="home-filter_btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input_label">Giá</span>
+                                <i class="select-input_icon fa-solid fa-chevron-down"></i>
+
+                                <!-- List option -->
+                                <ul class="select-input_list">
+                                    <li class="select-input_item">
+                                        <a href="" class="select-input_link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input_item">
+                                        <a href="" class="select-input_link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter_page">
+                                <span class="home-filter_page-num">
+                                    <span class="home-filter_page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter_page-control">
+                                    <a href="" class="home-filter_page-btn home-filter_page-btn-disabled">
+                                        <i class="home-filter_page-icon fa-solid fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter_page-btn">
+                                        <i class="home-filter_page-icon fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid_row">
+                                <!-- Product item -->
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid_column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item_img" style="background-image: url(https://cf.shopee.vn/file/69d4dead145a4e4b18580a136fa5ba45);"></div>
+                                        <h4 class="home-product-item-name">TT 27 - Váy body nữ (Nut) siêu xinh đẹp gợi cảm, sang chảnh 2022 hàng đẹp cao cấp (ảnh thật FREESHIP)</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item_price-old">400.000đ</span>
+                                            <span class="home-product-item_price-current">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item_action">
+                                            <span class="home-product-item_like home-product-item_like-liked">
+                                                <i class="home-product-item_like-icon-empty fa-brands fa-gratipay"></i>
+                                                <i class="home-product-item_like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item_rating">
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item_star-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item_sold">18 Đã bán</span>
+                                        </div>
+                                        <div class="home-product-item_origin">
+                                            <span class="home-product-item_brand">Whoo</span>
+                                            <span class="home-product-item_origin-name">Việt Nam</span>
+                                        </div>
+                                        <div class="home-product-item_favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item_sale-off">
+                                            <span class="home-product-item_sale-off-percent">25%</span>
+                                            <span class="home-product-item_sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product_pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon fa-solid fa-chevron-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item-active">
+                                <a href="" class="pagination-item_link ">
+                                    <i class="pagination-item_icon ">1</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon">2</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon">3</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon">4</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon">5</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon">...</i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon">14</i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item_link">
+                                    <i class="pagination-item_icon fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">PD-Shop Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Trang điểm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Giày dép</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Quần áo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">
+                                    <i class="footer-item_icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">
+                                    <i class="footer-item_icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">
+                                    <i class="footer-item_icon fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer_dowload">
+                            <img src="./assets/img/qr_code.png" alt="Download QR" class="footer_dowload-qr">
+                            <div class="footer_dowload-apps">
+                                <a href="" class="footer_dowload-app-link">                             
+                                    <img src="/assets/img/appstore.png" alt="Appstore" class="footer_dowload-app-img">
+                                </a>
+                                <a href="" class="footer_dowload-app-link">
+                                    <img src="/assets/img/googleplay.png" alt="Googleplay" class="footer_dowload-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_row">
+                    <p class="footer_text">  2022 - Bản quyền thuộc về Bùi Văn Duy</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal layout -->
+        <!-- <div class="modal">
+            <div class="modal_overlay"></div>
+            <div class="modal_body">
+                <div class="enter-form">
+                    <div class="enter-form_container">
+                        <div class="enter-form_header">
+                            <h3 class="enter-form_heading">Thêm sản phẩm</h3>
+                        </div>
+
+                        <div class="enter-form_form">
+                            <div class="enter-form_group">
+                                <input type="text" class="enter-form_input" placeholder="Tên sản phẩm">
+                            </div>
+                            <div class="enter-form_group">
+                                <input type="text" class="enter-form_input" placeholder="Số lượng">
+                            </div>
+                            <div class="enter-form_group">
+                                <input type="text" class="enter-form_input" placeholder="Mô tả">
+                            </div>
+                            <div class="enter-form_group">
+                                <input type="text" class="enter-form_input" placeholder="Giá">
+                            </div>
+                            <div class="enter-form_group">
+                                <input type="text" class="enter-form_input" placeholder="Nhà sản xuất">
+                            </div>
+                        </div>
+
+                        <div class="enter-form_control">
+                            <button class="btn btn-primary">Cập nhật</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Register form
+                <div class="auth-form">
+                    <div class="auth-form_container">
+                        <div class="auth-form_header">
+                            <h3 class="auth-form_heading">Đăng kí</h3>
+                            <span class="auth-form_switch-btn">Đăng nhập</span>
+                        </div>
+
+                        <div class="auth-form_form">
+                            <div class="auth-form_group">
+                                <input type="text" class="auth-form_input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-form_input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-form_input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form_aside">
+                            <p class="auth-form_policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với PD-shop về
+                                <a href="" class="auth-form_text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form_text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form_controls">
+                            <button class="btn auth-form_controls-back btn-mormal">TRỞ LẠI</button>
+                            <button class="btn btn-primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form_socials">
+                        <a href="" class="btn btn-size-s btn-with-icon">
+                            <i class="auth-form_socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form_socials-title">Kết nối với Facebook</span>
+                        </a>
+                    </div>
+                </div>    -->
+
+                <!-- Login form
+                <div class="auth-form">
+                    <div class="auth-form_container">
+                        <div class="auth-form_header">
+                            <h3 class="auth-form_heading">Đăng nhập</h3>
+                            <span class="auth-form_switch-btn">Đăng kí</span>
+                        </div>
+
+                        <div class="auth-form_form">
+                            <div class="auth-form_group">
+                                <input type="text" class="auth-form_input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-form_input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            
+                        </div>
+                        <div class="auth-form_aside">
+                            <div class="auth-form_help">
+                                <a href="" class="auth-form_help-link">Quên mật khẩu</a>
+                            </div>
+                        </div>
+                        <div class="auth-form_controls">
+                            <button class="btn auth-form_controls-back btn-mormal">TRỞ LẠI</button>
+                            <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form_socials">
+                        <a href="" class="btn btn-size-s btn-with-icon">
+                            <i class="auth-form_socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form_socials-title">Kết nối với Facebook</span>
+                        </a>
+                    </div>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
