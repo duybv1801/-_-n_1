@@ -379,7 +379,7 @@
 }
 
 .enter-form_control {
-    margin: 40px 0 ;
+    margin: 40px 0px;
     display: flex;
     justify-content: flex-end;
 }
@@ -410,6 +410,7 @@
 }
 
 .auth-form_switch-btn {
+    display: block;
     font-size: 1.6rem;
     color: var(--primary-color);
     font-weight: 400;
@@ -519,6 +520,8 @@
     width: 150px;
     text-align: center;
 }
+
+
 
 .header_cart-wrap {
     position: relative;
@@ -660,11 +663,13 @@
 
 .header_cart-no-cart-img {
     width: 54%;
-    display: none;
+}
+
+.header_cart-no-cart-img.cart-active {
+    display: block;
 }
 
 .header_cart-list-no-cart-msg{
-    display: none;
     font-size: 1.4rem;
     margin-top: 14px;
     color: var(--text-color);
@@ -1003,6 +1008,138 @@
     will-change: transform;
 }
 
+.product-item {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--white-color);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.product-header {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.product-item_sold {
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgba(44, 38, 38, 0.758);
+}
+
+.product-item-price {
+    display: flex;
+    position: relative;
+    background-color: rgb(241, 240, 240);
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.product-old {
+    font-size: 1.2rem;
+    color: #666;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.product-current {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.product-item_favorite {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+
+.product-color {
+    display: flex;
+    padding: 10px 0;
+    text-align: justify;
+    background-color: rgb(241, 240, 240);
+}
+
+.text-color {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+
+.btn-color {
+    min-width: 50px;
+    height: 25px;
+    text-decoration: none;
+    border: black;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.number {
+    width: 50px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 10px;
+
+}
+
+.comment {
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    align-items: center;
+}
+
+.comment-header {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    font-weight: 300;
+}
+
+.comment-add {
+    position: relative;
+    background-color: var(--border-color);
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    min-height: 34px;
+    border-radius: 2px;
+    min-width: 200px;
+}
+
+.comment-content {
+    padding-left: 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.des-content {
+    font-weight: 300;
+}
+
 .home-product-item:hover {
     transform: translateY(-1px);
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
@@ -1011,6 +1148,9 @@
 .home-product-item_img {
     padding-top: 100%;
     background-size: contain;
+    object-fit: cover;
+    max-width: 500px;
+    overflow: hidden;
 }
 .home-product-item-name {
     font-size: 1.4rem;
@@ -1053,6 +1193,34 @@
     font-size: 1.3rem;
 }
 
+.home-product-share {
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 10px 60px;
+}
+
+.home-product-text {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 100%;
+    padding: 0;
+    color: var(--primary-color);
+
+}
+
+.product-icon {
+    padding-left: 10px;
+    padding-right: 3px;
+
+}
+
+.product-item_like {
+    font-size: 2.3rem;
+    margin: 0 50px;
+}
+
 i.home-product-item_like-icon-fill {
     color: rgb(231, 54, 54);
     display: none;
@@ -1070,6 +1238,12 @@ i.home-product-item_like-icon-fill {
     font-size: 0.8rem;
     color: #c1c1c1;
     margin-left: auto;
+}
+
+.product-item_rating {
+    font-size: 1.8rem;
+    color: #c1c1c1;
+    margin: 0 60px;
 }
 
 .home-product-item_star-gold {

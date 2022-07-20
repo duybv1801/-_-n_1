@@ -53,10 +53,46 @@ html {
     width: 20%;
 }
 
+.grid_column-2-7 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.grid_column-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 41.6667%;
+}
+
+.grid_column-6-7 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid_column-7-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.grid_column-7 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 58.3333%;
+}
+
 .grid_column-10 {
     padding-left: 5px;
     padding-right: 5px;
     width: 83.3333%;
+}
+
+.grid_column-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
 }
 
 /* Animation*/
